@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Usaha Buku Nadhif</title>
+<link rel ="stylesheet" href ="style.css"/>
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Produk.html">Produk</a></li>
+    <li><a href="Bedah Buku Artikel.html">Bedah Buku Artikel</a></li>
+    <li><a href="Testimoni.html">Testimoni</a></li>
+    <li><a href="Tampil Testimoni.html">Tampil Testimoni</a></li>
+    <li><a href="Video Produk Event.html">Video Produk Event</a></li>
+    <li><a href="Kontak.html">Kontak</a></li>
+  </ul>
+</nav>
+</head>
+
+<body>
+<main class="konfirmasi">
+   <h1>Terima kasih!</h1>
+   <h1>Testimoni Anda telah berhasil dikirim.</h1>
+   <h1><a  href="Tampil Testimoni.html">Lihat testimoni yang sudah di input -> </a></h1> 
+   <section class="testimoni-terkirim"></section>
+   <a href="Testimoni.html">Kirim Testimoni lain</a>
+</main>
+
+<footer>
+   <p>&copy; 2025 Toku Buku Nadhif</p>    
+</footer>
+<script>
+   const container =
+   document.getE1ementById('daftarTestimoni');
+   const testimoniList=
+ JSON.parse(localStorage.getItem('testimoniList'))  ||  [];
+
+ if (testimoniList.length === 0)  {
+    container.innerHTML = "<p>Belum adz testimoni.</p>";
+    }else{
+    testimoniList.forEach((t, i)=>  {
+    const el = document.createElement('div');
+    el.className = 'testimoni-box';
+    el.innerHTML =`
+        <p><strong>Nama:</strong> ${t.nama}</p>
+        <p><strong>Email:</strong> ${t.email}</p>
+        <p><strong>pesan:</strong> ${t.pesan}</p> 
+     `;
+    container.appendChild(el);   
+    });
+        }
+   
+   document.getElementById("hapusSemua").addEventListener("click", function(){
+   const konfirmasi = confirm("Apakah Anda yakin ingin menghapus semua testimoni?");
+         if(konfirmasi){
+         localStorage.removeItem("testimoniList");
+         location.reload();       
+         } 
+        });
+   </script>
+
+</body>
+</html>

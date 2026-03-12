@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Usaha Buku Nadhif</title>
+<link rel ="stylesheet" href ="style.css"/>
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Produk.html">Produk</a></li>
+    <li><a href="Bedah Buku Artikel.html">Bedah Buku Artikel</a></li>
+    <li><a href="Testimoni.html">Testimoni</a></li>
+     <li><a href="Tampil Testimoni.html">Tampil Testimoni</a></li>
+     <li><a href="Video Produk Event.html">Video Produk Event</a></li>
+    <li><a href="Kontak.html">Kontak</a></li>
+  </ul>
+</nav>
+</head>
+
+<body>
+  <section class="daftar-produk">
+  <div class="produk">
+  <img src="Image/Buku 5 Menara.jpg">
+ <div class="container">
+  <div class="stat-card">
+    <span class="counter" data-target="9999">0</span>
+    <span class="label">Pengunjung Puas</span>
+  </div>
+
+  <div class="stat-card">
+    <span class="counter" data-target="9898">0</span>
+    <span class="label">Data Pengunjung</span>
+  </div>
+
+  <div class="stat-card">
+    <span class="counter" data-target="9999">0</span>
+    <span class="label">Buku Favorit</span>
+  </div>
+
+  <div class="stat-card">
+    <span class="counter" data-target="7999">0</span>
+    <span class="label">Pengunjung Terbaik</span>
+  </div>
+
+  <div class="stat-card">
+    <span class="counter" data-target="9099">0</span>
+    <span class="label">Rating Positif</span>
+  </div>
+</div>
+<script>
+  const counters = document.querySelectorAll('.counter');
+  
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      
+      // Mengatur durasi animasi agar halus
+      const speed = 150; 
+      const increment = target / speed;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 15);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    updateCount();
+  });
+</script>
+    <h1>Selamat Datang di Usaha Buku Nadhif</h1>
+    <h2>Anda bisa mencari aneka buku di toko kami</h2>
+    <p>Website ini menyajikan informasi lengkap seputar koleksi buku, ulasan/bedah buku, serta pengalaman dan testimoni dari para pelanggan.</p>
+<p>Website buku idealnya dirancang dengan tampilan yang sederhana, teratur, dan memberikan rasa nyaman bagi pengunjung. Pemilihan jenis huruf yang jelas dan nyaman dibaca sangat penting, baik font serif maupun sans-serif modern, karena target penggunanya adalah para pecinta literasi.
+Warna: Disarankan menggunakan kombinasi warna bernuansa hangat seperti krem, cokelat kayu, atau biru gelap untuk menciptakan kesan tenang, elegan, dan berwawasan.
+Navigasi: Sistem menu perlu dibuat jelas dan terstruktur, misalnya berdasarkan kategori genre, nama penulis, daftar buku terlaris, serta koleksi buku terbaru.</p>
+
+<h1>Mengenal Ukuran Buku by Nadhif</h1>
+<p>Ukuran Buku merupakan sebuah inisiatif yang bergerak di bidang kurasi buku dan pengembangan apresiasi terhadap buku sebagai objek pengetahuan dan seni. Di bawah pengelolaan Nadhif, platform ini berkembang menjadi ruang bagi para penikmat literasi yang mencari bacaan pilihan, mulai dari karya sastra, filsafat, hingga buku seni yang jarang tersedia di toko buku komersial.
+
+Karakteristik Utama:
+
+Kurasi Selektif: Setiap buku dipilih secara cermat dengan mempertimbangkan mutu isi serta nilai visualnya, sehingga koleksi yang ditampilkan memiliki standar kualitas yang tinggi.
+
+Tampilan Visual yang Kuat: Ukuran Buku dikenal dengan gaya visual yang sederhana, bersih, dan estetik. Penyajian buku menonjolkan detail fisik seperti tekstur kertas, tata letak, dan desain sampul.
+
+Pendekatan Berbasis Komunitas: Selain menawarkan buku, platform ini juga aktif membagikan kutipan, ulasan singkat, dan rekomendasi bacaan yang mendorong interaksi serta diskusi di kalangan pengikutnya, khususnya melalui media sosial.</p>
+<h1>Jenis Jenis Buku by Nadhif</h1>
+<p> Buku memiliki berbagai jenis sesuai dengan isi dan fungsinya. Buku cerita berisi kisah fiksi atau imajinasi untuk menghibur pembaca. Buku pengetahuan memuat informasi berdasarkan fakta untuk menambah wawasan. Buku pelajaran digunakan sebagai bahan belajar di sekolah. Selain itu, ada buku panduan yang berisi petunjuk melakukan suatu kegiatan.
+
+Beragamnya jenis buku membantu pembaca memilih bacaan sesuai kebutuhan.</p>
+<h1>Tips Merawat Buku by Nadhif</h1>
+<p>Agar buku tetap awet dan nyaman dibaca, kita perlu merawatnya dengan baik. Simpan buku di tempat yang kering dan tidak lembap supaya tidak berjamur. Hindari melipat atau merobek halaman buku, dan gunakan pembatas buku saat membaca. Jauhkan buku dari air, makanan, dan minuman agar tidak kotor atau rusak. Selain itu, sebaiknya buku diberi sampul agar terlindung dari debu dan sobekan.</p>
+<H1>Informasi mencari buku terbaik </H1>
+<p>Jika Anda menyukai satu buku, kemungkinan besar Anda akan menyukai karya lain dari penulis yang sama atau penerbit yang memiliki selera serupa.
+Penerbit Berkualitas: Di Indonesia, penerbit seperti Gramedia Pustaka Utama (GPU), Marjin Kiri, Mooi, atau Kepustakaan Populer Gramedia (KPG) sering kali memiliki standar kurasi yang tinggi.
+Lingkaran Penulis: Lihat siapa yang memberikan kutipan (blurb) di sampul belakang buku. Penulis hebat biasanya memberikan rekomendasi untuk buku-buku yang mereka anggap setara kualitasnya.</p>
+<h1>Lokasi Toko Kami</h1>
+<p>Tersembunyi di balik riuhnya Jalan Braga, Sudut Baca Kolektif adalah sebuah hidden gem bagi mereka yang mencari judul-judul buku yang sulit ditemukan di tempat lain. Meskipun berlokasi di dalam gang kecil yang estetik, suasana di dalam toko sangat tenang dan sejuk.</p>
+<h1>Kontak Admin Toko</h1>
+<p>Anda dapat menghubungi kami di Whatsapp 085717498007 </p>
+</body>
+</html>
